@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ديوان الشعر — شعر عربي قديم</title>
+  <meta name="description" content="عرض مختار من الشعر العربي — تصميم ورقي قديم وخط عربي جميل." />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Naskh+Arabic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/assets/img/favicon.png" />
+  <link rel="stylesheet" href="/css/main.css">
+  <meta name="theme-color" content="#E9D6B3">
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">ديوان الشعر</h1>
+      <p class="site-sub">شعر عربي قديم — اختيارات مختارة بخط عربي كلاسيكي</p>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <section class="hero">
+      <h2>مختارات من الشعر العربي</h2>
+      <p class="lead">نصوص مختارة بخط عربي جميل، مظهر ورقة بردي قديمة، قابلة للبحث والنسخ.</p>
+    </section>
+
+    <section class="poems grid">
+      <article class="poem">
+        <h3 class="poem-title">قصيدة: لُطف الندى</h3>
+        <div class="poem-body" lang="ar">
+          <p>أَقْبَلَ الصَّبَاحُ يَهْدِينَا نَفْسًا — وَعِينَا تَبْتَسِمُ كَالزُّهْرِ العَذْرَا</p>
+          <p>فَإِنَّ قَلْبِي لَكَ يَغنِي بِسِرِّهِ — وَكَأَنَّ اللَّيْلَ لَمْ يَعُدْ يُسْلِمَا</p>
+        </div>
+        <footer class="poem-meta">المصدر: مختارات | السنة: —</footer>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h3>حول الموقع</h3>
+      <p>هذا موقع ثابت (static) يمكن استضافته على GitHub Pages. لتحويله إلى مدونة أو لإضافة عدد كبير من القصائد استخدم ملفات Markdown أو محرر بسيط يدفع إلى مجلد posts/.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> ديوان الشعر — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(()=>{});
+    }
+  </script>
+</body>
+</html>
